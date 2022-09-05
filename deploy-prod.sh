@@ -10,7 +10,7 @@ txtgra='\033[1;30m' # Gray
 
 
 # 파라미터 전달 // Y.N 입력받기도 가능하면 좋음
-EXECUTION_PATH="/home/ubuntu/nextstep/infra-subway-deploy-mand2" # ~/deploy-prod.sh 에 위치.
+EXECUTION_PATH="/home/ubuntu/nextstep/infra-subway-stable" # ~/deploy-prod.sh 에 위치.
 echo -e "${txtylw}EXECUTION_PATH $EXECUTION_PATH ${txtrst}"
 
 cd $EXECUTION_PATH

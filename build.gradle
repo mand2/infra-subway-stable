@@ -47,6 +47,14 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 
 	compile 'org.flywaydb:flyway-core'  // runtimeOnly, implementation 만 쓰면 안됨. 이거로.
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	// log 관련
+	testImplementation 'org.junit.jupiter:junit-jupiter-logback.api'
+	implementation("net.logstash.logback:logstash-logback-encoder:6.1")
 }
 
 test {
